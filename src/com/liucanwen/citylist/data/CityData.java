@@ -7,6 +7,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import android.util.Log;
+
 import com.liucanwen.citylist.model.CityItem;
 import com.liucanwen.citylist.widget.ContactItemInterface;
 import com.liucanwen.citylist.widget.pinyin.PinYin;
@@ -33,8 +35,9 @@ public class CityData
 			for(int i = 0; i < ja1.length(); i++)
 			{
 				String cityName = ja1.getString(i);
-				
-				list.add(new CityItem(cityName, PinYin.getPinYin(cityName)));
+				CityItem item = new CityItem(cityName, PinYin.getPinYin(cityName));
+//				Log.d("RoboStore", item.toString());
+				list.add(item);
 			}
 			
 			list.add(new CityItem("±±¾©", "2"));

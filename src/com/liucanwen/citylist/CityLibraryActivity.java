@@ -21,9 +21,9 @@ import com.liucanwen.citylist.model.CityItem;
 import com.liucanwen.citylist.widget.ContactItemInterface;
 import com.liucanwen.citylist.widget.ContactListViewImpl;
 
-public class MainActivity extends Activity implements TextWatcher
+public class CityLibraryActivity extends Activity implements TextWatcher
 {
-	private Context context_ = MainActivity.this;
+	private Context context_ = CityLibraryActivity.this;
 
 	private ContactListViewImpl listview;
 
@@ -44,7 +44,7 @@ public class MainActivity extends Activity implements TextWatcher
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.city_library_activity);
 
 		filterList = new ArrayList<ContactItemInterface>();
 		contactList = CityData.getSampleContactList();
@@ -52,7 +52,7 @@ public class MainActivity extends Activity implements TextWatcher
 		adapter = new CityAdapter(this,
 				R.layout.city_item, contactList);
 
-		listview = (ContactListViewImpl) this.findViewById(R.id.listview);
+		listview = (ContactListViewImpl) this.findViewById(R.id.city_listview);
 		listview.setFastScrollEnabled(true);
 		listview.setAdapter(adapter);
 

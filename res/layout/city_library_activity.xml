@@ -5,6 +5,40 @@
     android:background="#ffffff" >
 
     <RelativeLayout
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/top_bg"
+        android:orientation="horizontal"
+        >
+        <FrameLayout 
+            android:id="@+id/back_cover"
+            android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentLeft="true"
+        	android:paddingLeft="20dp"
+        	android:paddingRight="20dp"
+        	android:foreground="@drawable/framelayout_selector"
+            >
+			<ImageView 
+			    android:layout_width="12dp"
+	        	android:layout_height="21dp"
+			    android:layout_gravity="center"
+			    android:src="@drawable/icon_back"
+			    />
+        </FrameLayout>
+		<TextView 
+		    android:id="@+id/title"
+		    android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+		    android:layout_gravity="center"
+		    android:gravity="center"
+		    android:textColor="@color/white"
+		    android:textSize="18sp"
+		    />
+    </RelativeLayout>
+    
+    <RelativeLayout
         android:id="@+id/searchBarContainer"
         android:layout_width="fill_parent"
         android:layout_height="48dp"
@@ -43,10 +77,10 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_below="@id/searchBarContainer" >
+        android:layout_below="@id/my_awesome_toolbar" >
 
         <com.liucanwen.citylist.widget.ContactListViewImpl
-            android:id="@+id/listview"
+            android:id="@+id/city_listview"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="#ffffff"

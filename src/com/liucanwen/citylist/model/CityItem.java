@@ -46,4 +46,10 @@ public class CityItem implements ContactItemInterface
 		this.fullName = fullName;
 	}
 
+	@Override
+	public String toString() {
+		return "CityItem [nickName=" + nickName + ", fullName=" + fullName
+				+ "]";
+	}
+
 }
