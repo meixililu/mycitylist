@@ -11,30 +11,31 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int background=0x7f040000;
-        public static final int black=0x7f040001;
-        public static final int bulegray=0x7f040006;
-        public static final int divider_line=0x7f040012;
-        public static final int font_focus=0x7f04000f;
-        public static final int gold=0x7f04000b;
-        public static final int gold_player=0x7f040010;
-        public static final int gray=0x7f040007;
-        public static final int graylight=0x7f040008;
-        public static final int listview_item_normal=0x7f040013;
-        public static final int listview_item_pressed=0x7f040014;
-        public static final int message_checked=0x7f040015;
-        public static final int message_no_check=0x7f040016;
-        public static final int nearly_hard=0x7f04000e;
-        public static final int orange=0x7f040009;
-        public static final int orange_light=0x7f04000a;
-        public static final int pink_red=0x7f040004;
-        public static final int red=0x7f040005;
-        public static final int semitransparent=0x7f04000d;
-        public static final int stick_color_bg=0x7f040017;
-        public static final int transparent=0x7f04000c;
-        public static final int white=0x7f040002;
-        public static final int whitetran=0x7f040011;
-        public static final int yellow=0x7f040003;
+        public static int background=0x7f040000;
+        public static int black=0x7f040001;
+        public static int bulegray=0x7f040006;
+        public static int divider_line=0x7f040012;
+        public static int font_focus=0x7f04000f;
+        public static int framelayout_cover_color=0x7f040013;
+        public static int gold=0x7f04000b;
+        public static int gold_player=0x7f040010;
+        public static int gray=0x7f040007;
+        public static int graylight=0x7f040008;
+        public static int listview_item_normal=0x7f040014;
+        public static int listview_item_pressed=0x7f040015;
+        public static int message_checked=0x7f040016;
+        public static int message_no_check=0x7f040017;
+        public static int nearly_hard=0x7f04000e;
+        public static int orange=0x7f040009;
+        public static int orange_light=0x7f04000a;
+        public static int pink_red=0x7f040004;
+        public static int red=0x7f040005;
+        public static int semitransparent=0x7f04000d;
+        public static int stick_color_bg=0x7f040018;
+        public static int transparent=0x7f04000c;
+        public static int white=0x7f040002;
+        public static int whitetran=0x7f040011;
+        public static int yellow=0x7f040003;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -43,38 +44,44 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
+        public static int activity_horizontal_margin=0x7f050000;
+        public static int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int icon_search=0x7f020001;
-        public static final int line=0x7f020002;
-        public static final int listitem_selector=0x7f020003;
-        public static final int search_bg=0x7f020004;
-        public static final int search_puin=0x7f020005;
+        public static int framelayout_selector=0x7f020000;
+        public static int ic_launcher=0x7f020001;
+        public static int icon_back=0x7f020002;
+        public static int icon_search=0x7f020003;
+        public static int line=0x7f020004;
+        public static int listitem_selector=0x7f020005;
+        public static int search_bg=0x7f020006;
+        public static int search_puin=0x7f020007;
+        public static int top_bg=0x7f020008;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int button_search=0x7f090002;
-        public static final int cityName=0x7f090006;
-        public static final int infoRowContainer=0x7f090005;
-        public static final int input_search_query=0x7f090001;
-        public static final int listview=0x7f090003;
-        public static final int searchBarContainer=0x7f090000;
-        public static final int sectionTextView=0x7f090004;
+        public static int action_settings=0x7f09000a;
+        public static int back_cover=0x7f090004;
+        public static int button_search=0x7f090008;
+        public static int cityName=0x7f090002;
+        public static int city_listview=0x7f090009;
+        public static int infoRowContainer=0x7f090001;
+        public static int input_search_query=0x7f090007;
+        public static int my_awesome_toolbar=0x7f090003;
+        public static int searchBarContainer=0x7f090006;
+        public static int sectionTextView=0x7f090000;
+        public static int title=0x7f090005;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int city_item=0x7f030001;
+        public static int city_item=0x7f030000;
+        public static int city_library_activity=0x7f030001;
     }
     public static final class menu {
-        public static final int main=0x7f080000;
+        public static int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
+        public static int action_settings=0x7f060001;
+        public static int app_name=0x7f060000;
+        public static int hello_world=0x7f060002;
     }
     public static final class style {
         /** 
@@ -98,10 +105,10 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static int AppBaseTheme=0x7f070000;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static int AppTheme=0x7f070001;
     }
 }
