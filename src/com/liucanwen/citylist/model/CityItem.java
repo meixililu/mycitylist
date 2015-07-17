@@ -1,15 +1,35 @@
 package com.liucanwen.citylist.model;
 
+import java.io.Serializable;
+
 import com.liucanwen.citylist.widget.ContactItemInterface;
 
-public class CityItem implements ContactItemInterface
-{
+public class CityItem implements ContactItemInterface, Serializable {  
+
+	private static final long serialVersionUID = 1L;
+	private String cityId;
 	private String nickName;
 	private String fullName;
 
+	public String getCityId() {
+		return cityId;
+	}
+	
+	public void setCityId(String cityId) {
+		this.cityId = cityId;
+	}
+	
 	public CityItem(String nickName, String fullName)
 	{
 		super();
+		this.nickName = nickName;
+		this.setFullName(fullName);
+	}
+	
+	public CityItem(String cityId,String nickName, String fullName)
+	{
+		super();
+		this.cityId = cityId;
 		this.nickName = nickName;
 		this.setFullName(fullName);
 	}
